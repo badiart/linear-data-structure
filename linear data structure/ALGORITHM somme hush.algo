@@ -1,0 +1,17 @@
+ALGORITHM somme hush
+var
+   set1: HASH_TABLE<INTEGER,INTEGER>;
+   set2: HASH_TABLE<INTEGER,INTEGER>;
+     set3: HASH_TABLE<INTEGER,INTEGER>;
+
+i:INTEGER
+j:INTEGER
+k:INTEGER
+BEGIN
+
+IF (htab.get(set1[i])<>htab.get(set2[j])) THEN
+    set3[k]:=set1[i]+set2[j];
+  htab.insert(set3[k],k);
+
+END_IF
+END
